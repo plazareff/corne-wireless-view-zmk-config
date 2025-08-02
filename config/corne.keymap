@@ -10,9 +10,9 @@
       display-name = "Base";
       bindings = <
         &kp ESC &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BSPC
-        &kp TAB &mt LGUI A      &mt LALT S      &mt LSHFT D     &mt LCTRL F     &kp G            &kp H           &mt RCTRL J     &mt RSHFT K     &mt RALT L      &mt RGUI SEMI   &kp SQT
-        &kp LSHFT  &kp Z           &kp X           &kp C           &kp V           &kp B            &kp N           &kp M           &kp COMMA       &kp DOT         &kp SLASH       &kp RSHFT
-                                             &kp LGUI    &mo 1          &lt 4 ENTER     &lt 5 SPACE     &mo 2          &kp RGUI
+        &kp TAB &mt LGUI A &mt LALT S &mt LSHFT D &mt LCTRL F &kp G &kp H &mt RCTRL J &mt RSHFT K &mt RALT L &mt RGUI SEMI &kp SQT
+        &kp LSHFT  &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHFT
+        &kp LGUI &mo 1 &lt 4 ENTER &lt 5 SPACE &mo 2 &kp RGUI
       >;
     };
 
@@ -29,40 +29,40 @@
     layer_2 {
       display-name = "Raise";
       bindings = <
-        &kp ESC    &kp LS(N1)      &kp LS(N2)      &kp LS(N3)      &kp LS(N4)      &kp LS(N5)       &kp LS(N6)      &kp LS(N7)      &kp LS(N8)      &kp LS(N9)      &kp LS(N0)      &kp BSPC
-        &kp TAB    &kp LS(N9)      &kp LS(N0)      &kp LS(LBKT)    &kp LS(RBKT)    &kp SQT          &kp MINUS       &kp EQUAL       &kp LBKT        &kp RBKT        &kp BSLH        &kp GRAVE
-        &kp LSHFT  &kp BSLH        &kp LA(N)       &kp LSA(L)      &kp LSA(DOT)    &kp LA(RBKT)     &kp LS(MINUS)   &kp LS(EQUAL)   &kp LS(LBKT)    &kp LS(RBKT)    &kp LS(BSLH)    &kp LS(GRAVE)
-                                             &kp LGUI    &trans         &kp ENTER      &kp SPACE       &trans          &kp RGUI
+        &kp ESC &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5) &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0) &kp BSPC
+        &kp TAB &kp LS(N9) &kp LS(N0) &kp LS(LBKT) &kp LS(RBKT) &kp SQT &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &kp GRAVE
+        &kp LSHFT  &kp BSLH &kp LA(N) &kp LSA(L) &kp LSA(DOT) &kp LA(RBKT) &kp LS(MINUS) &kp LS(EQUAL) &kp LS(LBKT) &kp LS(RBKT) &kp LS(BSLH) &kp LS(GRAVE)
+        &kp LGUI &trans &kp ENTER &kp SPACE &trans &kp RGUI
       >;
     };
 
     layer_3 {
       display-name = "Media";
       bindings = <
-        &boot      &kp F1          &kp F2          &kp F3          &kp F4          &kp F5           &kp F6          &kp F7          &kp F8          &kp F9          &kp F10         &kp F11
-        &none      &none           &none           &none           &kp UNDO        &kp REDO         &none           &kp C_VOL_UP    &kp C_VOL_DN    &kp LG(V)       &kp LG(C)       &kp LG(X)
-        &none      &none           &none           &none           &none           &none            &none           &kp C_NEXT      &kp C_PREV      &none           &none           &kp LCG(Q)
-                                             &kp LGUI    &mo 3          &kp ENTER      &kp SPACE       &trans          &kp RGUI
+        &boot &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+        &none &none &none &none &kp UNDO &kp REDO &none &kp C_VOL_UP &kp C_VOL_DN &kp LG(V) &kp LG(C) &kp LG(X)
+        &none &none &none &none &none &none &none &kp C_NEXT &kp C_PREV &none &none &kp LCG(Q)
+        &kp LGUI &mo 3 &kp ENTER &kp SPACE &trans &kp RGUI
       >;
     };
 
     layer_4 {
       display-name = "Navigation";
       bindings = <
-        &trans       &trans        &trans          &kp LC(UP)      &none           &kp LCA(O)       &trans          &trans          &trans          &trans          &trans          &trans
-        &kp LC(DOWN) &trans        &trans          &trans          &kp LCG(F)      &trans           &kp LC(LEFT)    &kp LC(UP)      &kp LC(DOWN)    &kp LC(RIGHT)   &trans          &trans
-        &trans       &trans        &trans          &trans          &trans          &trans           &trans          &trans          &trans          &trans          &trans          &trans
-                                             &trans       &trans        &trans          &trans          &trans          &trans
+        &trans &trans &trans &kp LC(UP) &none &kp LCA(O) &trans &trans &trans &trans &trans &trans
+        &kp LC(DOWN) &trans &trans &trans &kp LCG(F) &trans &kp LC(LEFT) &kp LC(UP) &kp LC(DOWN) &kp LC(RIGHT) &trans &trans
+        &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans
       >;
     };
 
     layer_5 {
       display-name = "Window Mgmt";
       bindings = <
-        &trans     &trans          &trans          &trans          &kp LCG(R)      &trans           &trans          &trans          &trans          &trans          &trans          &trans
-        &trans     &trans          &trans          &trans          &kp LCG(F)      &trans           &kp LCG(LEFT)   &kp LCG(DOWN)   &kp LCG(UP)     &kp LCG(RIGHT)  &kp LCG(SEMI)   &trans
-        &trans     &trans          &trans          &kp LCG(C)      &trans          &trans           &trans          &trans          &trans          &trans          &trans          &trans
-                                             &trans     &trans          &trans          &trans          &trans          &trans
+        &trans &trans &trans &trans &kp LCG(R) &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &kp LCG(F) &trans &kp LCG(LEFT) &kp LCG(DOWN) &kp LCG(UP) &kp LCG(RIGHT)  &kp LCG(SEMI) &trans
+        &trans &trans &trans &kp LCG(C) &trans &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans
       >;
     };
   };
