@@ -21,7 +21,7 @@
         bindings = <
         &kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
         &kp TAB &kp BSLH &kp N5 &kp MINUS &kp LA(N5) &kp LA(MINUS) &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &kp CAPS
-        &kp LSHFT &kp BSLH &kp LSA(N5)&kp LSA(MINUS) &trans &trans &kp HOME &kp PGDOWN &kp PGUP &kp END &trans &kp RSHFT
+        &kp LSHFT &kp BSLH &kp LSA(N5) &kp LSA(MINUS) &trans &trans &kp HOME &kp PG_DN &kp PG_UP &kp END &trans &kp RSHFT
         &kp LGUI &trans &kp ENTER &kp SPACE &trans &kp RGUI
         >;
     };
