@@ -1,0 +1,60 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+  keymap {
+    compatible = "zmk,keymap";
+    layer_0 {
+      display-name = "Base";
+      bindings = <
+        &kp ESCAPE &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BSPACE
+        &kp TAB &mt LGUI A &mt LALT S &mt LSFT D &mt LCTRL F &kp G &kp H &mt RCTRL J &mt RSFT K &mt RALT L &mt RGUI SCOLON &kp QUOTE
+        &kp LSHIFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHIFT
+        &kp LGUI &mo 13 &lt 4 ENTER &lt 5 SPACE &mo 23 &kp RGUI
+      >;
+    };
+    layer_1 {
+      display-name = "Lower";
+      bindings = <
+        &kp ESCAPE &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6 &kp 7 &kp 8 &kp 9 &kp 0 &kp BSPACE
+        &kp TAB //TODO LSFT(KC_NONUS_BSLASH) &kp 5 &kp MINUS //TODO LALT(KC_5) //TODO LALT(KC_MINUS) &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp NO &kp CAPSLOCK
+        &kp LSHIFT &kp NONUS_BSLASH //TODO LSA(KC_5) //TODO LSA(KC_MINUS) &kp NO &kp NO &kp HOME &kp PGDOWN &kp PGUP &kp END &kp NO &kp RSHIFT
+        &kp LGUI &kp TRNS &kp ENTER &kp SPACE &kp TRNS &kp RGUI
+      >;
+    };
+    layer_2 {
+      display-name = "Raise";
+      bindings = <
+        &kp ESCAPE //TODO LSFT(KC_1) //TODO LSFT(KC_2) //TODO LSFT(KC_3) //TODO LSFT(KC_4) //TODO LSFT(KC_5) //TODO LSFT(KC_6) //TODO LSFT(KC_7) //TODO LSFT(KC_8) //TODO LSFT(KC_9) //TODO LSFT(KC_0) &kp BSPACE
+        &kp TAB //TODO LSFT(KC_9) //TODO LSFT(KC_0) //TODO LSFT(KC_LBRACKET) //TODO LSFT(KC_RBRACKET) &kp QUOTE &kp MINUS &kp EQUAL &kp LBRACKET &kp RBRACKET &kp BSLASH &kp GRAVE
+        &kp LSHIFT &kp NONUS_BSLASH //TODO LALT(KC_N) //TODO LSA(KC_L) //TODO LSA(KC_DOT) //TODO LALT(KC_RBRACKET) //TODO LSFT(KC_MINUS) //TODO LSFT(KC_EQUAL) //TODO LSFT(KC_LBRACKET) //TODO LSFT(KC_RBRACKET) //TODO LSFT(KC_BSLASH) //TODO LSFT(KC_GRAVE)
+        &kp LGUI &kp TRNS &kp ENTER &kp SPACE &kp TRNS &kp RGUI
+      >;
+    };
+    layer_3 {
+      display-name = "Media ⌘";
+      bindings = <
+        &boot &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp NO
+        //TODO RGB_TOG //TODO RGB_HUI //TODO RGB_SAI //TODO RGB_VAI &kp UNDO &kp AGIN //TODO LGUI(KC_X) //TODO LGUI(KC_C) //TODO LGUI(KC_V) &kp VOLD &kp VOLU &kp NO
+        //TODO RGB_MOD //TODO RGB_HUD //TODO RGB_SAD //TODO RGB_VAD &kp NO &kp NO &kp NO &kp NO &kp NO &kp MRWD &kp MFFD //TODO LCG(KC_Q)
+        &kp LGUI &kp TRNS &kp ENTER &kp SPACE &kp TRNS &kp RGUI
+      >;
+    };
+    layer_4 {
+      bindings = <
+        &kp TRNS &kp TRNS &kp TRNS //TODO LCTL(KC_UP) //TODO 0xb21 //TODO LCAG(KC_O) //TODO RM_NEXT &kp HELP //TODO RM_SPDU //TODO RM_SPDD &kp TRNS &kp TRNS
+        //TODO LCTL(KC_DOWN) &kp TRNS &kp TRNS &kp TRNS //TODO LCG(KC_F) &kp TRNS //TODO LCTL(KC_LEFT) //TODO LCTL(KC_DOWN) //TODO LCTL(KC_UP) //TODO LCTL(KC_RIGHT) &kp TRNS &kp TRNS
+        //TODO HYPR(KC_NO) &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS //TODO RGB_M_B //TODO RGB_M_R //TODO RGB_M_SW //TODO RGB_M_SN //TODO RGB_M_K //TODO RGB_M_X
+        &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS
+      >;
+    };
+    layer_5 {
+      bindings = <
+        &kp TRNS &kp TRNS &kp TRNS &kp TRNS //TODO LCG(KC_R) &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS
+        &kp TRNS &kp TRNS &kp TRNS &kp TRNS //TODO LCG(KC_F) &kp TRNS //TODO LCG(KC_LEFT) //TODO LCG(KC_DOWN) //TODO LCG(KC_UP) //TODO LCG(KC_RIGHT) //TODO LCG(KC_SCOLON) &kp TRNS
+        &kp TRNS &kp TRNS &kp TRNS //TODO LCG(KC_C) &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS
+        &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS
+      >;
+    };
+  };
+};
