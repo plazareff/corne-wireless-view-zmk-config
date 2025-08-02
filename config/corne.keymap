@@ -19,10 +19,10 @@
     layer_1 {
       display-name = "Lower";
       bindings = <
-        &kp ESC   &kp N1                    &kp N2        &kp N3         &kp N4        &kp N5          &kp N6     &kp N7      &kp N8      &kp N9       &kp N0     &kp BSPC
-        &kp TAB   &kp LS(NON_US_BACKSLASH) &kp N5        &kp MINUS      &kp LA(N5)    &kp LA(MINUS)   &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT    &none      &kp CAPSLOCK
-        &kp LSHFT &kp NON_US_BACKSLASH     &kp LSA(N5)   &kp LSA(MINUS) &none         &none           &kp HOME   &kp PG_DN   &kp PG_UP   &kp END      &none      &kp RSHFT
-                                            &kp LGUI      &trans         &kp ENTER     &kp SPACE       &trans     &kp RGUI
+        &kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
+        &kp TAB &kp LS(NON_US_BSLH) &kp N5 &kp MINUS &kp LA(N5) &kp LA(MINUS) &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &kp CAPSLOCK
+        &kp LSHFT &kp NON_US_BSLH &kp LSA(N5) &kp LSA(MINUS) &trans &trans &kp HOME &kp PGDN &kp PGUP &kp END &trans &kp RSHFT
+                       &kp LGUI &trans &kp ENTER &kp SPACE &trans &kp RGUI
       >;
     };
     
@@ -39,10 +39,10 @@
     layer_3 {
       display-name = "Media & Fn";
       bindings = <
-        &bootloader &kp F1    &kp F2      &kp F3       &kp F4       &kp F5          &kp F6         &kp F7         &kp F8         &kp F9         &kp F10        &kp F11
-        &none       &none     &none       &none        &kp LG(Z)    &kp LG(LS(Z))   &none          &kp C_VOL_UP   &kp C_VOL_DN   &kp LG(V)      &kp LG(C)      &kp LG(X)
-        &none       &none     &none       &none        &none        &none           &none          &kp C_NEXT     &kp C_PREV     &none          &none          &kp LCG(Q)
-                                          &kp LGUI     &trans       &kp ENTER       &kp SPACE      &trans         &kp RGUI
+        &boot &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+        &none &none &none &none &kp LG(Z) &kp LGS(Z) &none &kp C_VOL_UP &kp C_VOL_DN &kp LG(V) &kp LG(C) &kp LG(X)
+        &none &none &none &none &none &none &none &kp C_NEXT &kp C_PREV &none &none &kp LCG(Q)
+                       &kp LGUI &trans &kp ENTER &kp SPACE &trans &kp RGUI
       >;
     };
     
