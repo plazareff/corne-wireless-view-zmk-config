@@ -41,7 +41,7 @@
       bindings = <
         &boot &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
         &none &none &none &none &kp UNDO &kp AGIN &none &kp C_VOL_UP &kp C_VOL_DN &kp LGUI(V) &kp LGUI(C) &kp LGUI(X)
-        &none &none &none &none &none &none &none &kp C_NEXT &kp C_PREV &none &none &kp LCTRL(LGUI(Q))
+        &none &none &none &none &none &none &none &kp C_NEXT &kp C_PREV &none &none &kp LCTRL(Q)
         &kp LGUI &mo 3 &kp ENTER &kp SPACE &trans &kp RGUI
       >;
     };
@@ -49,8 +49,8 @@
     layer_4 {
       display-name = "Navigation";
       bindings = <
-        &trans &trans &trans &kp LCTRL(UP) &none &kp LCTRL(LALT(O)) &trans &trans &trans &trans &trans &trans
-        &kp LCTRL(DOWN) &trans &trans &trans &kp LCTRL(LGUI(F)) &trans &kp LCTRL(LEFT) &kp LCTRL(UP) &kp LCTRL(DOWN) &kp LCTRL(RIGHT) &trans &trans
+        &trans &trans &trans &kp LCTRL(UP) &none &kp LALT(O) &trans &trans &trans &trans &trans &trans
+        &kp LCTRL(DOWN) &trans &trans &trans &kp LGUI(F) &trans &kp LCTRL(LEFT) &kp LCTRL(UP) &kp LCTRL(DOWN) &kp LCTRL(RIGHT) &trans &trans
         &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans &trans
       >;
@@ -59,9 +59,9 @@
     layer_5 {
       display-name = "Window Mgmt";
       bindings = <
-        &trans &trans &trans &trans &kp LCTRL(LGUI(R)) &trans &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &kp LCTRL(LGUI(F)) &trans &kp LCTRL(LGUI(LEFT)) &kp LCTRL(LGUI(DOWN)) &kp LCTRL(LGUI(UP)) &kp LCTRL(LGUI(RIGHT)) &kp LCTRL(LGUI(SEMI)) &trans
-        &trans &trans &trans &kp LCTRL(LGUI(C)) &trans &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &kp LGUI(R) &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &kp LGUI(F) &trans &kp LCTRL(LEFT) &kp LCTRL(DOWN) &kp LCTRL(UP) &kp LCTRL(RIGHT) &kp LGUI(SEMI) &trans
+        &trans &trans &trans &kp LGUI(C) &trans &trans &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans &trans
       >;
     };
