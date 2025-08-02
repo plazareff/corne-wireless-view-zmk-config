@@ -19,20 +19,20 @@
     layer_1 {
       display-name = "Lower";
       bindings = <
-        &kp ESC   &kp N1              &kp N2        &kp N3         &kp N4        &kp N5          &kp N6     &kp N7      &kp N8      &kp N9       &kp N0     &kp BSPC
-        &kp TAB   &kp LS(NON_US_BSLH) &kp N5        &kp MINUS      &kp LA(N5)    &kp LA(MINUS)   &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT    &none      &kp CAPSLOCK
-        &kp LSHFT &kp NON_US_BSLH     &kp LSA(N5)   &kp LSA(MINUS) &none         &none           &kp HOME   &kp PGDN    &kp PGUP    &kp END      &none      &kp RSHFT
-                                          &kp LGUI     &trans        &kp ENTER       &kp SPACE  &trans      &kp RGUI
+        &kp ESC   &kp N1                    &kp N2        &kp N3         &kp N4        &kp N5          &kp N6     &kp N7      &kp N8      &kp N9       &kp N0     &kp BSPC
+        &kp TAB   &kp LS(NON_US_BACKSLASH) &kp N5        &kp MINUS      &kp LA(N5)    &kp LA(MINUS)   &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT    &none      &kp CAPSLOCK
+        &kp LSHFT &kp NON_US_BACKSLASH     &kp LSA(N5)   &kp LSA(MINUS) &none         &none           &kp HOME   &kp PG_DN   &kp PG_UP   &kp END      &none      &kp RSHFT
+                                            &kp LGUI      &trans         &kp ENTER     &kp SPACE       &trans     &kp RGUI
       >;
     };
     
     layer_2 {
       display-name = "Raise";
       bindings = <
-        &kp ESC   &kp LS(N1)       &kp LS(N2)  &kp LS(N3)     &kp LS(N4)     &kp LS(N5)      &kp LS(N6)     &kp LS(N7)     &kp LS(N8)     &kp LS(N9)     &kp LS(N0)     &kp BSPC
-        &kp TAB   &kp LS(N9)       &kp LS(N0)  &kp LS(LBKT)   &kp LS(RBKT)   &kp SQT         &kp MINUS      &kp EQUAL      &kp LBKT       &kp RBKT       &kp BSLH       &kp GRAVE
-        &kp LSHFT &kp NON_US_BSLH  &kp LA(N)   &kp LSA(L)     &kp LSA(DOT)   &kp LA(RBKT)    &kp LS(MINUS)  &kp LS(EQUAL)  &kp LS(LBKT)   &kp LS(RBKT)   &kp LS(BSLH)   &kp LS(GRAVE)
-                                          &kp LGUI       &trans         &kp ENTER       &kp SPACE      &trans         &kp RGUI
+        &kp ESC   &kp LS(N1)           &kp LS(N2)  &kp LS(N3)     &kp LS(N4)     &kp LS(N5)      &kp LS(N6)     &kp LS(N7)     &kp LS(N8)     &kp LS(N9)     &kp LS(N0)     &kp BSPC
+        &kp TAB   &kp LS(N9)           &kp LS(N0)  &kp LS(LBKT)   &kp LS(RBKT)   &kp SQT         &kp MINUS      &kp EQUAL      &kp LBKT       &kp RBKT       &kp BSLH       &kp GRAVE
+        &kp LSHFT &kp NON_US_BACKSLASH &kp LA(N)   &kp LSA(L)     &kp LSA(DOT)   &kp LA(RBKT)    &kp LS(MINUS)  &kp LS(EQUAL)  &kp LS(LBKT)   &kp LS(RBKT)   &kp LS(BSLH)   &kp LS(GRAVE)
+                                            &kp LGUI    &trans         &kp ENTER      &kp SPACE      &trans         &kp RGUI
       >;
     };
     
@@ -49,10 +49,10 @@
     layer_4 {
       display-name = "Navigation";
       bindings = <
-        &trans    &trans      &trans      &kp LC(UP)   &none        &kp LCA(O)      &trans         &trans         &trans         &trans         &trans         &trans
-        &kp LC(DOWN) &trans   &trans      &trans       &kp LCG(F)   &trans          &kp LC(LEFT)   &kp LC(UP)     &kp LC(DOWN)   &kp LC(RIGHT)  &trans         &trans
-        &trans    &trans      &trans      &trans       &trans       &trans          &trans         &trans         &trans         &trans         &trans         &trans
-                                          &trans       &trans       &trans          &trans         &trans         &trans
+        &trans      &trans      &trans      &kp LC(UP)   &none        &kp LCA(O)      &trans         &trans         &trans         &trans         &trans         &trans
+        &kp LC(DOWN) &trans     &trans      &trans       &kp LCG(F)   &trans          &kp LC(LEFT)   &kp LC(UP)     &kp LC(DOWN)   &kp LC(RIGHT)  &trans         &trans
+        &trans      &trans      &trans      &trans       &trans       &trans          &trans         &trans         &trans         &trans         &trans         &trans
+                                            &trans       &trans       &trans          &trans         &trans         &trans
       >;
     };
     
