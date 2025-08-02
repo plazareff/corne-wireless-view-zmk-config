@@ -6,40 +6,36 @@
   keymap {
     compatible = "zmk,keymap";
 
-    // Layer 0: Base
     layer_0 {
       display-name = "Base";
       bindings = <
         &kp ESC    &kp Q           &kp W           &kp E           &kp R           &kp T            &kp Y           &kp U           &kp I           &kp O           &kp P           &kp BSPC
         &kp TAB    &mt LGUI A      &mt LALT S      &mt LSHFT D     &mt LCTRL F     &kp G            &kp H           &mt RCTRL J     &mt RSHFT K     &mt RALT L      &mt RGUI SEMI   &kp SQT
-        &kp LSHFT  &kp Z           &kp X           &kp C           &kp V           &kp B            &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
+        &kp LSHFT  &kp Z           &kp X           &kp C           &kp V           &kp B            &kp N           &kp M           &kp COMMA       &kp DOT         &kp SLASH       &kp RSHFT
                                              &kp LGUI    &mo 1          &lt 4 ENTER     &lt 5 SPACE     &mo 2          &kp RGUI
       >;
     };
 
-    // Layer 1: Lower (numbers, nav)
     layer_1 {
       display-name = "Lower";
       bindings = <
         &kp ESC    &kp N1          &kp N2          &kp N3          &kp N4          &kp N5           &kp N6          &kp N7          &kp N8          &kp N9          &kp N0          &kp BSPC
-        &kp TAB    &kp LS(NON_US_BSLH) &kp N5      &kp MINUS       &kp LA(N5)      &kp LA(MINUS)    &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans          &kp CAPSLOCK
-        &kp LSHFT  &kp NON_US_BSLH &kp LSA(N5)     &kp LSA(MINUS)  &trans           &trans            &kp HOME        &kp PGDN        &kp PGUP        &kp END         &trans          &kp RSHFT
+        &kp TAB    &kp LS(BSLH)    &kp N5          &kp MINUS       &kp LA(N5)      &kp LA(MINUS)    &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans          &kp CAPSLOCK
+        &kp LSHFT  &kp BSLH        &kp LSA(N5)     &kp LSA(MINUS)  &trans           &trans           &kp HOME        &kp PGDN        &kp PGUP        &kp END         &trans          &kp RSHFT
                                              &kp LGUI    &trans         &kp ENTER      &kp SPACE       &trans          &kp RGUI
       >;
     };
 
-    // Layer 2: Raise (symbols)
     layer_2 {
       display-name = "Raise";
       bindings = <
         &kp ESC    &kp LS(N1)      &kp LS(N2)      &kp LS(N3)      &kp LS(N4)      &kp LS(N5)       &kp LS(N6)      &kp LS(N7)      &kp LS(N8)      &kp LS(N9)      &kp LS(N0)      &kp BSPC
         &kp TAB    &kp LS(N9)      &kp LS(N0)      &kp LS(LBKT)    &kp LS(RBKT)    &kp SQT          &kp MINUS       &kp EQUAL       &kp LBKT        &kp RBKT        &kp BSLH        &kp GRAVE
-        &kp LSHFT  &kp NON_US_BSLH &kp LA(N)       &kp LSA(L)      &kp LSA(DOT)    &kp LA(RBKT)     &kp LS(MINUS)   &kp LS(EQUAL)   &kp LS(LBKT)    &kp LS(RBKT)    &kp LS(BSLH)    &kp LS(GRAVE)
+        &kp LSHFT  &kp BSLH        &kp LA(N)       &kp LSA(L)      &kp LSA(DOT)    &kp LA(RBKT)     &kp LS(MINUS)   &kp LS(EQUAL)   &kp LS(LBKT)    &kp LS(RBKT)    &kp LS(BSLH)    &kp LS(GRAVE)
                                              &kp LGUI    &trans         &kp ENTER      &kp SPACE       &trans          &kp RGUI
       >;
     };
 
-    // Layer 3: Media & Fn
     layer_3 {
       display-name = "Media";
       bindings = <
@@ -50,18 +46,16 @@
       >;
     };
 
-    // Layer 4: Navigation
     layer_4 {
       display-name = "Navigation";
       bindings = <
-        &trans     &trans          &trans          &kp LC(UP)      &none           &kp LCA(O)       &trans          &trans          &trans          &trans          &trans          &trans
+        &trans       &trans        &trans          &kp LC(UP)      &none           &kp LCA(O)       &trans          &trans          &trans          &trans          &trans          &trans
         &kp LC(DOWN) &trans        &trans          &trans          &kp LCG(F)      &trans           &kp LC(LEFT)    &kp LC(UP)      &kp LC(DOWN)    &kp LC(RIGHT)   &trans          &trans
-        &trans     &trans          &trans          &trans          &trans          &trans           &trans          &trans          &trans          &trans          &trans          &trans
-                                             &trans     &trans          &trans          &trans          &trans          &trans
+        &trans       &trans        &trans          &trans          &trans          &trans           &trans          &trans          &trans          &trans          &trans          &trans
+                                             &trans       &trans        &trans          &trans          &trans          &trans
       >;
     };
 
-    // Layer 5: Window Mgmt
     layer_5 {
       display-name = "Window Mgmt";
       bindings = <
