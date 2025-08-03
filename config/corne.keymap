@@ -31,7 +31,7 @@
       bindings = <
         &kp ESC &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5) &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0) &kp BSPC
         &kp TAB &kp LS(NON_US_BSLH) &kp LS(N0) &kp LS(LBKT) &kp LS(RBKT) &kp SQT &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp NON_US_BSLH &kp GRAVE
-        &kp LSHFT &kp NON_US_BSLH &kp TILDE &trans &trans &kp LA(RBKT) &kp LS(MINUS) &kp LS(EQUAL) &kp LS(LBKT) &kp LS(RBKT) &kp LS(NON_US_BSLH) &kp LS(GRAVE)
+        &kp LSHFT &kp NON_US_BSLH &kp TILDE &none &none &kp LA(RBKT) &kp LS(MINUS) &kp LS(EQUAL) &kp LS(LBKT) &kp LS(RBKT) &kp LS(NON_US_BSLH) &kp LS(GRAVE)
         &kp LGUI &trans &kp ENTER &kp SPACE &trans &kp RGUI
       >;
     };
@@ -73,7 +73,7 @@
     tri_layer {
       // When both Lower (1) and Raise (2) are active, activate Media (3)
       if-layers = <1 2>;
-      then-layers = <3>;
+      then-layer = <3>;
     };
   };
 };
