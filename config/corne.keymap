@@ -3,7 +3,10 @@
 #include <dt-bindings/zmk/bt.h>
 
 &mt {
-    tapping-term-ms = <300>; // This is the value already set by default
+    tapping-term-ms = <300>;
+    flavor = "tap-preferred"; // balanced | hold-preferred | tap-preferred
+    require-prior-idle-ms = <125>;
+    quick-tap-ms = <200>;
 };
 
 / {
