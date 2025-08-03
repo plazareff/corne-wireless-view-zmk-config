@@ -40,9 +40,9 @@
       display-name = "Media";
       bindings = <
         &boot &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
-        &none &none &none &none &kp K_UNDO &kp AGIN &none &kp C_VOL_UP &kp C_VOL_DN &kp LG(V) &kp LG(C) &kp LG(X)
-        &none &none &none &none &none &none &none &kp C_NEXT &kp C_PREV &none &none &kp LC(Q)
-        &kp LGUI &mo 3 &kp ENTER &kp SPACE &trans &kp RGUI
+        &none &none &none &none &kp K_UNDO &kp AGIN &none &kp LG(X) &kp LG(C) &kp LG(V) &kp C_VOL_UP &kp C_VOL_DN
+        &none &none &none &none &none &none &none &none &none &kp C_NEXT &kp C_PREV &kp LC(Q)
+        &kp LGUI &trans &kp ENTER &kp SPACE &trans &kp RGUI
       >;
     };
 
