@@ -16,10 +16,10 @@
     layer_0 {
       display-name = "Normal";
       bindings = <
-        &kp ESC &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BSPC
+        &lt 6 ESC &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BSPC
         &kp TAB &mt LGUI A &mt LALT S &mt LSHFT D &mt LCTRL F &kp G &kp H &mt RCTRL J &mt RSHFT K &mt RALT L &mt RGUI SEMI &kp SQT
         &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-        &lt 6 LGUI &mo 1 &lt 4 ENTER &lt 5 SPACE &mo 2 &kp RGUI
+        &kp LGUI &mo 1 &lt 4 ENTER &lt 5 SPACE &mo 2 &kp RGUI
       >;
     };
 
